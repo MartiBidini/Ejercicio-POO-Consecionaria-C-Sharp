@@ -1,0 +1,10 @@
+# Archivos generados por el compilador y Visual Studio
+[Bb]in/
+[Oo]bj/
+
+# Archivos de la solución de Visual Studio
+.vs/
+*.user
+*.suo
+*.exe
+*.dll
