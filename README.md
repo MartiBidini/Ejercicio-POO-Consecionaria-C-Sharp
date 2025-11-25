@@ -10,12 +10,11 @@ El programa simula el inventario de una concesionaria, demostrando cómo objetos
 
 | Concepto | Explicación | Archivos |
 | :---: | :--- | :--- |
-| **Herencia y Abstracción** | Uso de `abstract class Vehiculo` como plantilla base para evitar la duplicidad de código. | `Vehiculo.cs` |
-| **Polimorfismo** | Capacidad de la `List<Vehiculo>` de almacenar `Auto`, `Moto` y `Camioneta` y llamar a su `MostrarDatos()` respectivo. | `Program.cs` |
+| **Herencia y Abstracción** | Uso de una clase `abstracta` (`Vehiculo`) como plantilla base para evitar la duplicidad de código. | `Vehiculo.cs` |
+| **Polimorfismo** | Capacidad de tratar a `Auto`, `Moto` y `Camioneta` como un solo tipo (`Vehiculo`) dentro de una `List<>`. | `Program.cs` |
 | **Interfaces** | Implementación del contrato `ICargable` para otorgar la habilidad `Cargar()` solo a la clase `Camioneta`. | `ICargable.cs`, `Camioneta.cs` |
-| **Propiedades Get/Set** | Uso de propiedades autoimplementadas (`{ get; set; }`) para encapsular datos. | `Vehiculo.cs`, `Auto.cs`, etc. |
-| **Listas Genéricas** | Uso de `List<T>` para un manejo dinámico y flexible del inventario. | `Program.cs` |
-
+| **Propiedades Autoimplementadas** | Uso de `get; set;` para encapsulamiento. | `Vehiculo.cs`, `Auto.cs`, etc. |
+| **Gestión de Colecciones** | El inventario se maneja a través de una lista dinámica (`List<Vehiculo>`), lo que permite **añadir y eliminar vehículos** fácilmente. | `Program.cs` |
 ---
 
 ## 💻 Instrucciones de Ejecución
